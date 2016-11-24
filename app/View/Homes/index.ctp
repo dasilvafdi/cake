@@ -1,6 +1,3 @@
-<!-- Title name -->
+Testsvue
+
 <?= $this->assign('title','Artistes'); ?>
-
-<!-- php -->
-<?php
-
