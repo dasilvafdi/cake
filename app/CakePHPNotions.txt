@@ -1,0 +1,39 @@
+Config : Configuration du framework
+Console : Lancer la console
+Lib : Contenire les librairies
+Local : Pour les sites multilangues
+Plugins : Pours les plugins
+Test : pour les testes unitaires
+Temp : Permet de gérer le cashe
+Vendor : Utiliser des librairies exterieur au framwork
+Webroot : Racine du site
+
+-----------------Dossiers de codes-----------------
+Controlleur : Dossier des controlleurs
+Model : Dossier des models
+View : Dossier des vues
+
+------------------- Controller ---------------------
+Conventions de nommage :
+-Nom du fichier : "****Controller.php" Nom au pluriel
+-Exemple de classe : "class 'nom du fichier .php' extends AppController"
+
+---------------------- View ------------------------
+Elements : Conteneurs de morceaux de vue (menu,...etc)
+Email : Vue des email
+Error : Contien la liste des erreures
+Layout : Template
+Conventions :
+-Nom du dossier de vue : "*****" Donner le ême nom que le controlleur et au pluriel.
+-Créer un fichier .ctp avec le même nom que l'action dans le controlleur
+
+--------------- Installer bootstrap -----------------
+Pour insérer bootstrap il faut aller effacer le
+contenu du fichier default.ctp dans le dossier View/Layouts/default.ctp
+et y placer le code de bootstrap
+
+Modifier les chemins pour pouvoir utiliser bootstrap
+Exemple de chemin avec les helpers de cakePHP :
+-<?= $this->Html->css('bootstrap'); ?> Utiliser les styles bootstrap
+-<?= $this->Html->script('bootstrap');?> Utilise les js bootstrap
+-<?= $this->fetch('content'); ?> Vas chercher le contenu de la vue active
