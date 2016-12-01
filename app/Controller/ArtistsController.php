@@ -11,10 +11,10 @@
 //*********************************************************
 
 // Use the model
-class HomesController extends AppController{
+class ArtistsController extends AppController{
 
 	public function index(){
-		debug($this->Home->find('all', array('fields'	=> array('Home.id','Home.artLastName','Home.artFirstName','Home.artStageName')
-			)));
+		$a=$this->Artist->find('all');
+		$this->set('artists', $a);
 	}
 }
